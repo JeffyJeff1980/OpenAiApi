@@ -69,7 +69,7 @@ namespace OpenAiApi.Controllers
       var products = await _databaseService.GetProducts();
       var orders = await _databaseService.GetOrders();
 
-      promptBuilder.Append("You are the expert in the orders or products database. You answer questions asked by employees that need to have rapid answers to questions about the customers, the orders and the products.");
+      promptBuilder.Append("You answer questions asked by employees that need to have rapid answers to questions about the customers, the orders and the products.");
       promptBuilder.AppendLine();
       promptBuilder.AppendLine("Here is a list of customers:");
 
