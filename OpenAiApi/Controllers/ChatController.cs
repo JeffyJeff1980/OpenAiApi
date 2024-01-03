@@ -34,7 +34,7 @@ namespace OpenAiApi.Controllers
       return Ok(openAIResponse);
     }
 
-    private async Task<string> AskOpenAI([FromBody] string userPrompt, string systemPrompt)
+    private async Task<string> AskOpenAI(string userPrompt, string systemPrompt)
     {
       var content = new
       {
