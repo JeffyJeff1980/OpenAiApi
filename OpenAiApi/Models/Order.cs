@@ -2,9 +2,9 @@
 {
   public class Order
   {
-    public decimal OrderId { get; set; }
-    public decimal CustomerId { get; set; }
-    public decimal ProductId { get; set; }
-    public decimal Quantity { get; set; }
+    public int OrderId { get; set; }
+    public int CustomerId { get; set; }
+    public int ProductId { get; set; }
+    public int Quantity { get; set; }
   }
 }

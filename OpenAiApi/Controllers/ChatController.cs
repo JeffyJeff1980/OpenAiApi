@@ -71,6 +71,7 @@ namespace OpenAiApi.Controllers
 
       promptBuilder.Append("You answer questions asked by employees that need to have rapid answers to questions about the customers, the orders and the products.");
       promptBuilder.AppendLine();
+      promptBuilder.AppendLine();
       promptBuilder.AppendLine("Here is a list of customers:");
 
       // list customers
@@ -85,7 +86,7 @@ namespace OpenAiApi.Controllers
       // list products
       foreach (var product in products)
       {
-        promptBuilder.AppendLine($"Product ID: {product.ProductId} - Name: {product.Name} - Category: {product.Category} - Price: {product.Price}");
+        promptBuilder.AppendLine($"Product ID: {product.ProductId} - Name: {product.ProductName} - Category: {product.Category} - Price: {product.Price}");
       }
 
       promptBuilder.AppendLine();
