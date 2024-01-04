@@ -15,6 +15,7 @@ builder.Services.AddSwaggerGen();
 #region Services Dependencies
 
 builder.Services.AddScoped<IDatabaseService, DatabaseService>();
+builder.Services.AddScoped<IOpenAiService, OpenAiService>();
 
 #endregion Services Dependencies
 
