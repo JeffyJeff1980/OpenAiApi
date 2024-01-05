@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OpenAiApi.Base;
 using OpenAiApi.Contracts;
 using OpenAiApi.Models;
 

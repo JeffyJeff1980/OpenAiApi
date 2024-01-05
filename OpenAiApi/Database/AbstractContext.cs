@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace OpenAiApi.Base
+namespace OpenAiApi.Database
 {
   public abstract class AbstractContext<TContext> : DbContext where TContext : DbContext
   {
